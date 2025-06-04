@@ -38,8 +38,9 @@ Bem-vindo ao EDUCASH! Esta é uma aplicação web desenvolvida para ajudar estud
 * **Gestor de Pacotes:** [npm](https://www.npmjs.com/) (ou Yarn)
 
 ## 📂 Estrutura do Projeto
-´´´
-educash/                     # Pasta raiz do projeto
+
+```text
+educash-app-local/                     # Pasta raiz do projeto
 ├── public/                  # Ficheiros estáticos servidos diretamente
 │   └── index.html           # Template HTML principal para a SPA (Single Page Application) antes do Vite processar
 │   └── (outros como favicon.ico, etc.)
@@ -59,10 +60,11 @@ educash/                     # Pasta raiz do projeto
 ├── tsconfig.json            # (Se usar TypeScript) Configuração do compilador TypeScript para o projeto
 ├── tsconfig.node.json       # (Se usar TypeScript) Configuração específica do TypeScript para o ambiente Node.js (ex: ficheiros de config)
 └── vite.config.ts           # Ficheiro de configuração do Vite
-´´´
+```
+
 ### Detalhamento de Ficheiros e Pastas Chave:
 
-* **`educash/`**: A pasta que contém todo o seu projeto.
+* **`educash-app-local/`**: A pasta que contém todo o seu projeto.
 * **`public/`**: Contém recursos estáticos que não são processados pelo sistema de build do Vite da mesma forma que o código em `src/`. O `index.html` aqui serve como um template se necessário, mas o `index.html` na raiz é o principal para o Vite.
 * **`src/`**: O coração da sua aplicação.
     * **`App.jsx` (ou `.tsx`)**: É o componente React de mais alto nível abaixo do `main.jsx`. Ele geralmente contém a lógica de roteamento (se houver), layout principal e onde os diferentes "ecrãs" ou "páginas" da sua aplicação são renderizados. No EDUCASH, ele gere a visualização atual (Dashboard, Pé-de-Meia, etc.) e passa os dados locais para os subcomponentes.
